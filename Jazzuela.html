@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazzuela</title>
+    
+    <style>
+        p {font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body style="background-image: url(./vino\ tinto.jpg);">
+    <div style="background-image: url(./verde.jpg);">
+        <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: xx-large; border: 5px solid rgb(2, 92, 47)">Jazzuela</h1>
+        <p>En la escritura de Cortázar siempre se ha resaltado su gran trabajo con el lenguaje y el buen tratamiento que le hace a sus escritos. Sin embargo, una característica casi desapercibida es que la música siempre ha acompañado el ritmo de su escritura y a sus icónicos personajes. Este es el caso de <i>Rayuela</i>, en esta novela el jazz se encuentra incrustado no solo en los gustos de su protagonista, sino que crea una forma de escritura para este como hombre transeúnte.</p>
+        <p>Analizándolo más a fondo, el jazz contiene tres funciones dentro de esta novela. Para empezar, este género se presenta como personaje, esto es debido a que en el famoso “Club de la Serpiente” los personajes se reúnen varias veces a escuchar jazz, esto los empieza a envolver y los invita a pensar en ideas más filosóficas, además cambia su humor a uno más melancólico y pensante, y hay que resaltar que las letras de las canciones empiezan a formar parte de los diálogos de los personajes. En segundo lugar, el jazz se empieza a presentar como un símbolo de búsqueda, esto es porque Oliveira está en un constante estado transeúnte el cual empieza a ser acompañado no solo con las melodías sino con la temática de las letras de las canciones, logrando complementar lo que siente y piensa Oliveira.</p>
+        <p>La última función se basa, y como lo mencioné anteriormente, en la forma de escritura. El jazz siempre se ha destacado por la libertad en la interpretación con la que cuentan los músicos, por lo que eso mismo fue lo que Cortázar quiso hacer con esta novela. La escritura en esta obra se presenta muy improvisada y repleta de sonoridad al estilo del jazz, lo que hace que la lectura se sienta musical y logre captar los flujos de consciencia de los personajes de una manera más viva y humana. Sin duda, Cortázar logro unir estas artes y formar una explosión de sentidos que crean una perspectiva mucho más integra de sus personajes. Para cerrar me gustaría dejar citado un fragmento del capítulo 17 que contiene y expone estas tres funciones mencionadas:</p>
+        <p style="text-align: center;">"… todo es turbio y sucio y canalla y cada hombre quisiera arrancar esos corpiños tibios mientras las manos acarician una espalda y las muchachas tienen la boca entreabierta y se van dando al miedo delicioso y a la noche, entonces sube una trompeta poseyéndolas por todos los hombres, tomándolas con una sola frase caliente que las deja caer como una planta cortada entre los brazos de los compañeros, y hay una inmóvil carrera, un salto al aire de la noche, sobre la ciudad, hasta que un piano minucioso las devuelve a sí mismas, exhaustas y reconciliadas y todavía vírgenes hasta el sábado siguiente, todo eso en una música que espanta a los cogotes de platea, a los que creen que nada es de verdad si no hay programas impresos y acomodadores, y así va el mundo y el jazz es como un pájaro que migra o emigra o inmigra o transmigra, saltabarreras, burlaaduanas, algo que corre y se difunde y esta noche en Viena está cantando Ella Fitzgerald mientras en París Kenny Clarke inaugura una cave y en Perpignan brincan los dedos de Oscar Peterson, y Satchmo por todas partes con el don de ubicuidad que le ha prestado el Señor, en Birmingham, en Varsovia, en Milán, en Buenos Aires, en Ginebra, en el mundo entero, es inevitable, es la lluvia y el pan y la sal, algo absolutamente indiferente a los ritos nacionales, a las tradiciones inviolables, al idioma y al folklore: una nube sin fronteras, un espía del aire y del agua, una forma arquetípica, algo de antes, de abajo, que reconcilia mexicanos con noruegos y rusos y españoles, los reincorpora al oscuro fuego central olvidado, torpe y mal y precariamente los devuelve a un origen traicionado, les señala que quizá había otros caminos y que el que tomaron no era el único y no era el mejor, o que quizás había otros caminos, y que el que tomaron era el mejor, pero que quizá había otros caminos dulces de caminar y que no los tomaron, o los tomaron a medias, y que un hombre es siempre más que un hombre y siempre menos que un hombre, más que un hombre porque encierra eso que el jazz alude y soslaya y hasta anticipa, y menos que un hombre porque de esa libertad ha hecho un juego estético o moral, un tablero de ajedrez donde se reserva ser el alfil o el caballo, una definición de libertad que se enseña en las escuelas, precisamente en las escuelas donde jamás se ha enseñado y jamás se enseñará a los niños el primer compás de un ragtime y la primera frase de un blues, etcétera, etcétera". </p>
+        <br>
+        <center>
+            <img width="500px" class="claseImagen" id="imagenCambio" src="./Cortázar.jpg" alt="" onmouseenter="desaperecer()" onmouseleave="aparecer()">
+       
+        <button type="button" onclick="cambiarImagen()" >Cambiar imagen</button>
+
+        </center>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: larger;">Aquí te dejo anexada la playlist de jazzuela para que puedas disfrutar y conocer sobre esta unión de música y letras:</p>
+        <br>
+        <iframe src="https://open.spotify.com/embed/album/6zFmbqx7a4MJEOPKOnOtGV?utm_source=generator&amp;theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+    
+    <script>
+        function cambiarClases(){
+           var imagenes = document.getElementsByClassName('claseImagen'); 
+           for (var img of imagenes){
+               img.style.width = '1500px'; 
+           }
+       }
+        var boolean = true;
+       function cambiarImagen(){
+           if(boolean == true){
+               document.getElementById('imagenCambio').src = "./Cortázar.jpg"; 
+               boolean = false;
+           } else {
+               document.getElementById('imagenCambio').src = "./jazzuela.jpg";
+               boolean = true; 
+           }             
+       } 
+   </script>
+</body>
+</html>
